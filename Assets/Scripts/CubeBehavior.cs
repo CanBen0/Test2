@@ -10,6 +10,9 @@ public class CubeBehavior : MonoBehaviour
 
     public InputManager.Direction correctDirection;
 
+    public float explosionForce = 8f;
+    public float torqueForce = 10f;
+
     public void Slice(InputManager.Direction swipeDir)
     {
         GameObject slicedVersion = null;
@@ -60,8 +63,8 @@ public class CubeBehavior : MonoBehaviour
         {
             Vector3 forceDir = (rb.transform.position - transform.position).normalized;
             forceDir += Random.insideUnitSphere * 0.5f;
-            rb.AddForce(forceDir * 8f, ForceMode.Impulse);
-            rb.AddTorque(Random.insideUnitSphere * 10f, ForceMode.Impulse);
+            rb.AddForce(forceDir * explosionForce, ForceMode.Impulse);
+            rb.AddTorque(Random.insideUnitSphere * torqueForce, ForceMode.Impulse);
         }
 
         Destroy(sliced, 2f);

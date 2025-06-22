@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctDirection: 2
+  explosionForce: 8
+  torqueForce: 10
 --- !u!54 &-1207250622501321389
 Rigidbody:
   m_ObjectHideFlags: 0
