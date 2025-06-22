@@ -37,7 +37,6 @@ public class CubeBehavior : MonoBehaviour
         {
             GameObject sliced = Instantiate(slicedVersion, transform.position, transform.rotation);
             StartCoroutine(ActivateAndExplode(sliced));
-            Destroy(gameObject);
         }
         else
         {
@@ -68,5 +67,6 @@ public class CubeBehavior : MonoBehaviour
         }
 
         Destroy(sliced, 2f);
+        Destroy(gameObject);
     }
 }
