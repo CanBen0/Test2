@@ -104,6 +104,8 @@ MonoBehaviour:
   slicedVersionDown: {fileID: 0}
   slicedVersionLeft: {fileID: 919132149155446097, guid: 7566a748f6b0f4cba9933d1893b1fb4a, type: 3}
   slicedVersionRight: {fileID: 0}
+  explosionForce: 8
+  torqueForce: 10
 --- !u!114 &7233361482696124286
 MonoBehaviour:
   m_ObjectHideFlags: 0
